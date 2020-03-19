@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .menu {
@@ -30,16 +31,114 @@ html, body {
 /* PROJETO */
 .projeto > .projeto-titulo {
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .projeto > .projeto-titulo h1 {
-    font-size: 20px;
+    font-size: 26px;
     color: blue;
     text-transform: uppercase;
     text-align: center;
 }
 
-.projeto > .projeto-site .site-titulo {
-    
+.projeto > .projeto-site {
+    border: 2px solid #333333;
+    border-radius: 20px;
+    width: 80%;
+    padding: 40px 0;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.projeto > .projeto-site .site-titulo h3 {
+    font-size: 24px;
+    color: blue;
+    margin-left: 40px;
+}
+
+.projeto > .projeto-site .site-descricao p {
+    font-size: 18px;
+    margin: 10px 40px;
+}
+
+.projeto > .projeto-site .site-descricao .tec-utilizadas {
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+.projeto > .projeto-site .site-descricao a {
+    font-size: 16px;
+    text-decoration: none;   
+}
+
+.projeto > .projeto-site .site-img-link img {
+    width: 600px;
+    margin-right: 40px;
+    border: solid 1px #333333;
+    border-radius: 20px;
+}
+
+/* CONTATO */
+.contato {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.contato > .contato-titulo h2 {
+    font-size: 26px;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contato > .contato-social {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contato > .contato-social a {
+    margin: 0 10px;
+    font-size: 40px;
+    color: black;
+}
+
+.contato > .contato-social a:hover {
+    color: #810181;
+}
+
+.contato > .contato-pessoal {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.contato > .contato-pessoal p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.contato > .contato-pessoal p i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #000000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: #fff;
 }
