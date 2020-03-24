@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    
+    <!-- ICON -->
     <script src="https://kit.fontawesome.com/a24efc79cd.js" crossorigin="anonymous"></script>
+
     <title>Sobre</title>
 </head>
 
@@ -25,21 +36,86 @@
 
         <div class="apresentacao-inicial">
             <p>Olá, me chamo</p>
-            <h1>Rafael</h1>
-            <p>Estou aqui para ajudar no crescimento da sua marca. Que tal ter um site criado com as melhores tecnlogias
+            <h2>Rafael</h2>
+            <p>Sou <span class="destaque">Desenvolvedor FrontEnd</span> e estou aqui para ajudar no crescimento da sua
+                marca.</p>
+            <p>Você precisa ter um site criado com as melhores tecnlogias
                 divulgando o seu negócio?</p>
+            <p>Posso conseguir isso!</p>
         </div>
 
         <div class="apresentacao-convite">
             <p>Vamos tomar um café?</p>
-            <button>Sim!</button>
-            <button>Talvez outro dia.</button>
+            <button type="button" class="btn-sim" data-toggle="modal" data-target="#modalSim">Sim!</button>
+            <button type="button" class="btn-nao" data-toggle="modal" data-target="#modalNao">Talvez outro dia</button>
         </div>
+
+        <!-- MODAL SIM -->
+        <div class="modal fade" id="modalSim" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Então vamos marcar</h3>
+                        <p>Me contate pelas opções abaixo:</p>
+                        <div class="modal-social">
+                            <div>
+                                <a href="https://www.linkedin.com/in/rafael-rodrigues-santos/" target="_blank"> <i
+                                        class="fab fa-linkedin"></i> </a>
+                            </div>
+                            <div>
+                                <a href="https://api.whatsapp.com/send?phone=5511984017371&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio." target="_blank"> <i
+                                        class="fas fa-mobile-alt"></i> </a>
+                            </div>
+                            <div>
+                                <a href="mailto:rafaelrodrigues_@outlook.com"> <i
+                                        class="fas fa-at"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM MODAL SIM -->
+
+        <!-- MODAL NAO -->
+        <div class="modal fade" id="modalNao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Ok! Então quando quiser marcar </h3>
+                    <p>Me contate pelas opções abaixo:</p>
+                    <div class="modal-social">
+                        <div>
+                            <a href="https://www.linkedin.com/in/rafael-rodrigues-santos/" target="_blank"> <i
+                                    class="fab fa-linkedin"></i> </a>
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=5511984017371&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio." target="_blank"> <i
+                                    class="fas fa-mobile-alt"></i> </a>
+                        </div>
+                        <div>
+                            <a href="mailto:rafaelrodrigues_@outlook.com"> <i
+                                    class="fas fa-at"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM MODAL NAO -->
 
     </section>
     <!-- FIM SECAO-APRESENTACAO -->
 
-    <!-- INICIO SECAO-CONTATO -->
+   <!-- INICIO SECAO-CONTATO -->
     <section class="contato">
 
         <div class="contato-titulo">
@@ -58,19 +134,29 @@
 
         <div class="contato-pessoal">
             <div>
-                <p><i class="fas fa-mobile-alt"></i> 11 98401-7371</p>
-                <p><i class="fas fa-at"></i> rafaelrodrigues_@outlook.com</p>
+                <p><a href="https://api.whatsapp.com/send?phone=5511984017371&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio." target="_blank"><i class="fas fa-mobile-alt"></i> 11 98401-7371</a></p>
+                <p><a href="mailto:rafaelrodrigues_@outlook.com"><i class="fas fa-at"></i> rafaelrodrigues_@outlook.com</a></p>
             </div>
         </div>
 
     </section>
-    <!-- FIM SECAO-CONTATO -->
+    <!-- FIM SECAO-CONTATO --> 
 
     <!-- FOOTER -->
     <footer>
         <p>Copyright © 2020 Rafael Santos </p>
     </footer>
     <!-- FIM-FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
 </body>
 
