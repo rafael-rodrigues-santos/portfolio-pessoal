@@ -5,7 +5,7 @@ $(document).ready(function(){
         $.ajax
         ({
             dataType: 'html',
-            url: home.html, //link da pagina que o ajax buscará
+            url: link, //link da pagina que o ajax buscará
             success: function(data)
             {
                 $(".projeto").html(data).fadeIn(340); //Inserindo o retorno da pagina ajax
