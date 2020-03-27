@@ -38,6 +38,8 @@ html, body {
 #projeto {
     width: 80%;
     height: auto;
+    border: solid red;
+    margin: 0 auto;
 }
 
 
