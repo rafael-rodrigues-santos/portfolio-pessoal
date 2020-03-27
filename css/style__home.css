@@ -1,0 +1,66 @@
+/* PROJETO */
+.projeto {
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.projeto > .projeto-titulo {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.projeto > .projeto-titulo h1 {
+    font-size: 26px;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projeto > .projeto-site {
+    box-shadow: 0px 1px 4px 1px #333333;
+    background: #fff;
+    border-radius: 0 20px 20px 0;
+    width: 100%;
+    margin: 50px auto;
+    padding: 10px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.projeto > .projeto-site .site-titulo, .site-descricao {
+    padding: 0 10px;
+    width: 315px;
+}
+
+.projeto > .projeto-site .site-titulo h3 {
+    font-size: 24px;
+    color: blue;
+}
+
+.projeto > .projeto-site .site-descricao p {
+    font-size: 18px;
+}
+
+.projeto > .projeto-site .site-descricao .tec-utilizadas {
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+.projeto > .projeto-site .site-descricao a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.projeto > .projeto-site .site-descricao a:hover {
+    color: #000000;
+}
+
+.projeto > .projeto-site .site-img-link img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+    /* margin: 5px 5px 0 0; */
+}
