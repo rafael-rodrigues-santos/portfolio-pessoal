@@ -18,6 +18,11 @@
 //     });
 // });
 
+window.onload = function carregarHome(pagina){
+    $(".projeto").load(pagina);
+}
+
 function carregarHome(pagina){
     $(".projeto").load(pagina);
 }
+
