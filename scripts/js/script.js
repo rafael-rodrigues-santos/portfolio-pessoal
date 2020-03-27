@@ -18,6 +18,6 @@
 //     });
 // });
 
-function carregar(pagina){
-    $("#projeto").load(pagina);
+function carregarHome(pagina){
+    $(".projeto").load(pagina);
 }
