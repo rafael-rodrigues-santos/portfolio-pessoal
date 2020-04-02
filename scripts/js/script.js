@@ -1,28 +1,66 @@
-// $(document).ready(function(){
-//     $(".teste").onclick(function(){
-//         //Aqui estau retirando o conteudo da propriedade href “o link destino” e colocando em uma variavel
-//         var link = $(this).attr('href');
-//         $.ajax
-//         ({
-//             dataType: 'html',
-//             url: link, //link da pagina que o ajax buscará
-//             success: function(data)
-//             {
-//                 $(".projeto").html(data).fadeIn(340); //Inserindo o retorno da pagina ajax
-//             },
-//             error: function(data){
-//                 $(".projeto").html("<center><p>ERRO ao carregar outra pagina</p></center>").fadeIn(300); //Em caso de erro ele exibe esta mensagem
-//             }
-//         }); 
-     
-//     });
-// });
+function loadHeader() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("menu").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../header.html", true);
+    xhttp.send();
+  }
 
-window.onload = function carregarHome(pagina){
-    $(".projeto").load(pagina);
-}
+  function loadFooter() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("footer").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../footer.html", true);
+    xhttp.send();
+  }
 
-function carregarHome(pagina){
-    $(".projeto").load(pagina);
-}
+  function loadHome() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("container").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../home.html", true);
+    xhttp.send();
+  }
+
+  function loadAbout() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("container").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../about.html", true);
+    xhttp.send();
+  }
+
+  function loadPortfolio() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("container").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../portfolio.html", true);
+    xhttp.send();
+  }
+
+  function loadContact() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("container").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "../contact.html", true);
+    xhttp.send();
+  }
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <script src="https://kit.fontawesome.com/a24efc79cd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="contato-titulo">
+        <h2>Contato</h2>
+    </div>
+    <section class="contato">
+
+        <form action="" class="form">
+            <div class="inputs">
+                <input type="text" name="name" id="name" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="tel" name="phone" id="email" placeholder="Telefone ou Celular">
+            </div>
+            <div class="radios">
+                <p>Como prefere receber retorno?</p>
+                <input type="radio" name="contact-return" id="tel" value="tel"> Telefone
+                <input type="radio" name="contact-return" id="email" value="email"> E-mail
+            </div>
+            <div class="radios whats">
+                <p>Esse número possuí whatsapp?</p>
+                <input type="radio" name="whatsapp" id="yes" value="yes"> Sim
+                <input type="radio" name="whatsapp" id="no" value="no"> Não
+            </div>
+            <div class="radios contact-whats">
+                <p>Posso te contatar pelo whatsapp?</p>
+                <input type="radio" name="contact-whatsapp" id="yes" value="yes"> Sim
+                <input type="radio" name="contact-whatsapp" id="no" value="no"> Não
+            </div>
+            <div class="inputs">
+            <select id="subject" name="subject">
+                <option value="doubt">Dúvida</option>
+                <option value="compliment">Elogio</option>
+                <option value="complaint">Reclamação</option>
+                <option value="request">Solicitação de Orçamento</option>
+            </select>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+        <div class="contato-informacao">
+            <div class="contato-social">
+                <div>
+                    <a href="https://www.linkedin.com/in/rafael-rodrigues-santos/" target="_blank"> <i
+                            class="fab fa-linkedin"></i> </a>
+                </div>
+                <div>
+                    <a href="https://github.com/rafael-rodrigues-santos" target="_blank"> <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contato-pessoal">
+                <div>
+                    <p><a href="https://api.whatsapp.com/send?phone=5511984017371&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio."
+                            target="_blank"><i class="fas fa-mobile-alt"></i> 11 98401-7371</a></p>
+                    <p><a href="mailto:rafaelrodrigues_@outlook.com"><i class="fas fa-at"></i>
+                            rafaelrodrigues_@outlook.com</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
