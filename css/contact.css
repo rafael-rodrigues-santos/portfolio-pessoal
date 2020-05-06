@@ -1,0 +1,177 @@
+/* CONTATO */
+.contato {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    min-width: 300px;
+    margin: 70px auto;
+    padding: 50px 0;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    box-shadow: 1px 2px 5px 0px #777777;
+    border-radius: 5px;
+}
+
+.contato-titulo h2 {
+    font-size: 28px;
+    color: #2575fc;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    min-width: 300px;
+}
+
+.form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .inputs label {
+    font-size: 1em;
+    background: #fff;
+    margin: 0 0 -25px 8px;
+    padding: 0 10px;
+    z-index: 0;
+    text-align: left;
+    width: 60px;
+    font-weight: 600;
+}
+
+#l-subject {
+    width: 70px;
+}
+
+#l-message {
+    width: 90px;
+}
+
+.form .inputs input, select {
+    padding: 15px;
+    border: 1px solid #777777;
+    margin: 15px 0;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form .inputs
+input:focus,
+select:focus,
+textarea:focus {
+    border-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%) 1;
+    animation: teste 3s linear infinite;
+}
+
+@keyframes teste {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 1px 2px 5px 0 #9267c0;
+    }
+    100% {
+        box-shadow: none
+    }
+}
+
+
+.form .inputs textarea {
+    padding: 15px;
+    border: 1px solid #777777;
+    margin: 15px 0;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    resize: none;
+}
+
+.form input[type=submit] {
+    border: 1px solid #777777;
+    width: 150px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #fff;
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form input[type=submit]:hover {
+    border-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%) 1;
+    box-shadow: 0 0 5px 0 #6a11cb;
+    background-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.contato .contato-informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;    
+    margin: 0 0 40px 0;
+}
+
+
+
+.contato .contato-informacao .contato-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 300px;
+}
+
+.contato .contato-social a {
+    font-size: 48px;
+    color: #333333;
+}
+
+.contato .contato-social i:hover {
+    background-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 950px) {
+    .contato {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .contato {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contato {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contato {
+        width: 80%;
+    }
+
+    .form {
+        width: 50%;
+        min-width: 280px;
+    }
+
+    .contato .contato-social a {
+        font-size: 40px;
+    }
+}
