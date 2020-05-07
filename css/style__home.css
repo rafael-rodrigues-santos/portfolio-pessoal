@@ -66,3 +66,8 @@ html, body {
 .intro button.btn__contato:hover {
     background-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
 }
+
+.message-submit {
+    color: #fff;
+    font-size: 2em;
+}
