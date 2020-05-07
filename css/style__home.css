@@ -67,7 +67,7 @@ html, body {
     background-image: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
 }
 
-.message-submit {
+.message-submit h2, h4 {
     color: #fff;
     font-size: 2em;
 }
