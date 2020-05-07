@@ -71,7 +71,7 @@ function loadHeader() {
         document.getElementById("container").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "../succes.html", true);
+    xhttp.open("GET", "../success.html", true);
     xhttp.send();
   }
 
