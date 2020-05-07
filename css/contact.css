@@ -143,6 +143,10 @@ textarea:focus {
     -webkit-text-fill-color: transparent;
 }
 
+p.hidden {
+    display: none;
+}
+
 @media only screen and (max-width: 950px) {
     .contato {
         width: 70%;

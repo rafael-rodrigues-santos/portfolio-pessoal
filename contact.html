@@ -25,8 +25,11 @@
     <section class="contato">
 
         <!-- <form action="" class="form" id="form" onsubmit="return validaForm()"> -->
-        <form action="" class="form" id="form" method="POST" data-netlify="true">
+        <form action="success.html" class="form" id="form" method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field">
             <div class="inputs">
+                <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
                 <label for="name" id="l-name">Nome</label>
                 <input type="text" name="name" id="name" placeholder="João Silva" required>
                 <span class="erro"></span>
@@ -34,20 +37,21 @@
                 <input type="email" name="email" id="email" placeholder="joão@email.com" required>
                 <span class="erro"></span>
                 <label for="phone" id="l-phone">Celular</label>
-                <input type="tel" name="phone" id="email" placeholder="(00) 00000-0000">
+                <input type="tel" name="phone" id="phone" placeholder="(00) 00000-0000">
             </div>
             <div class="inputs">
                 <label for="subject" id="l-subject">Assunto</label>
             <select id="subject" name="subject">
                 <option value="" disabled selected></option>
-                <option value="doubt">Dúvida</option>
-                <option value="association">Parceria</option>
-                <option value="request">Solicitação de Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="parceria">Parceria</option>
+                <option value="orcamento">Solicitação de Orçamento</option>
             </select>
                 <label for="message" id="l-message">Mensagem</label>
                 <textarea name="message" id="message" cols="30" rows="10" maxlength="500"></textarea>
             </div>
             <input type="submit" value="Enviar" >
+            <div data-netlify-recaptcha="true"></div>
         </form>
 
 
