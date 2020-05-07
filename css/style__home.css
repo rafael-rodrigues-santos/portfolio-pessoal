@@ -70,6 +70,7 @@ html, body {
 .message {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .message-submit-one h2 {
@@ -80,5 +81,10 @@ html, body {
 
 .message-submit-two h4 {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+.message-submit-two i {
+    color: #fff;
+    font-size: 3.8em;
 }
